@@ -48,6 +48,4 @@ class Visit(models.Model):
 
         seconds = self.get_duration()
 
-        if seconds >= minutes * 60:
-            return True
-        return False
+        return seconds >= minutes * 60
