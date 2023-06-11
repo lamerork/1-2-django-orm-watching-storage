@@ -5,12 +5,12 @@
 ### Как установить
 
 
-DATABASE_HOST - Хост базы данных
-DATABASE_PORT - Порт базы данных
-DATABASE_NAME - Имя базы данных
-DATABASE_USER - Пользователь 
-DATABASE_PASSWORD = Пароль
-DEBUG - Отладка
+'DATABASE_HOST' - Хост базы данных
+'DATABASE_PORT' - Порт базы данных
+'DATABASE_NAME' - Имя базы данных
+'DATABASE_USER' - Пользователь 
+'DATABASE_PASSWORD' = Пароль
+'DEBUG' - Отладка
 
 Python3 должен быть уже установлен. 
 Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
