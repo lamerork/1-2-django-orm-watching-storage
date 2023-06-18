@@ -4,19 +4,24 @@
 
 ### Как установить
 
-Настройки переменных
-
-'DATABASE_HOST' - Хост базы данных
-'DATABASE_PORT' - Порт базы данных
-'DATABASE_NAME' - Имя базы данных
-'DATABASE_USER' - Пользователь 
-'DATABASE_PASSWORD' = Пароль
-'DEBUG' - Отладка
-
 Python3 должен быть уже установлен. 
 Затем используйте `pip` (или `pip3`, есть конфликт с Python2) для установки зависимостей:
 ```
 pip install -r requirements.txt
+```
+
+### Как настроить
+
+В файле `.env` должны быть переменные.
+
+```
+DATABASE_HOST - 'Хост базы данных'
+DATABASE_PORT - 'Порт базы данных'
+DATABASE_NAME - 'Имя базы данных'
+DATABASE_USER - 'Пользователь' 
+DATABASE_PASSWORD = 'Пароль'
+SECRET_KEY = 'Секретный ключ'
+ALLOWED_HOSTS = 'Хост'
 ```
 
 ### Цель проекта

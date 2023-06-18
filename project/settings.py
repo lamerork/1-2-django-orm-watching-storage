@@ -9,7 +9,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'HOST': env.str('DATABASE_HOST'),
-        'PORT': env.str('DATABASE_PORT'),
+        'PORT': env.str('DATABASE_PORT', default = 5434),
         'NAME': env.str('DATABASE_NAME'),
         'USER': env.str('DATABASE_USER'),
         'PASSWORD': env.str('DATABASE_PASSWORD'),
@@ -18,13 +18,13 @@ DATABASES = {
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = 'REPLACE_ME'
+SECRET_KEY = env.str('SECRET_KEY')
 
-DEBUG = env.bool('DEBUG')
+DEBUG = env.bool('DEBUG', default = False)
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
